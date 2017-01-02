@@ -1,25 +1,22 @@
 package com.dilaykarakas.resimlebil;
 
-import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
 
 
 public class OyunActivity extends AppCompatActivity {
 
     private ImageView s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s22, s23, s24;
     private Button    c1, c2, c3;
-
-
     private TextView puan;
     private int      dogruSayisi=0;
-
+    private Button btn;
 
 
     @Override
@@ -60,6 +57,18 @@ public class OyunActivity extends AppCompatActivity {
 
 
         // soru 1
+
+        btn = (Button) findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(OyunActivity.this,MainActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+
         s1.setImageResource(R.drawable.s1);
         s2.setImageResource(R.drawable.s2);
         s3.setImageResource(R.drawable.s3);

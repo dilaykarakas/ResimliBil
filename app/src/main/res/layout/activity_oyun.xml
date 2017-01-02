@@ -96,9 +96,23 @@
         android:layout_width="100dp"
         android:layout_marginBottom="28dp"
         android:textStyle="bold"
-        android:layout_above="@+id/s1"
-        android:layout_toRightOf="@+id/s1"
-        android:layout_toEndOf="@+id/s1"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:layout_above="@+id/s2"
+        android:layout_alignRight="@+id/c2"
+        android:layout_alignEnd="@+id/c2"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <Button
+        android:text="ana menü"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:layout_alignBaseline="@+id/puan"
+        android:layout_alignBottom="@+id/puan"
+        android:layout_alignLeft="@+id/c1"
+        android:layout_alignStart="@+id/c1"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
 </RelativeLayout>
